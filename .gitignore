@@ -53,3 +53,6 @@ playground.xcworkspace
 
 # xcresult
 *.xcresult
+
+# Ignore Xcode build data
+DerivedData/
