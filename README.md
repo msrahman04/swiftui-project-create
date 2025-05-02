@@ -111,7 +111,7 @@ What it is: An option to use iCloud + Core Data with CloudKit sync.
 
 Available only when: Storage = Core Data and Team = selected.
 
-Continue...
+Continue....
 
 
 
