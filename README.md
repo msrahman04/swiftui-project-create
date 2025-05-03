@@ -111,7 +111,42 @@ What it is: An option to use iCloud + Core Data with CloudKit sync.
 
 Available only when: Storage = Core Data and Team = selected.
 
-Continue....
+
+##Main components to complete development toolchain
+
+The Swift project consists of several main components that work together to form the complete development toolchain. Here are the main parts:
+
+#### 🔹swift 
+- The Swift command-line tool that serves as the main interface for developers. It's a driver that delegates to other tools like swiftc. When we run swift commands, it's orchestrating the other components.
+
+#### 🔹swiftc 
+- The Swift compiler proper. This tool compiles Swift source code into machine code. When we run swift build or swift compile, it's ultimately calling swiftc to do the actual compilation.
+
+#### 🔹Swift Standard Library 
+- Contains the core types and functions available to all Swift programs (Array, Dictionary, String, etc.).
+
+#### 🔹Swift Package Manager (SwiftPM) 
+- The official tool for managing the distribution of Swift code and handling dependencies. Used via commands like swift package, swift build, and swift test.
+
+#### 🔹Swift REPL (Read-Eval-Print Loop) 
+- An interactive environment for testing snippets of Swift code, accessible by simply typing swift in the terminal.
+
+#### 🔹SourceKit 
+- Powers IDE features like code completion, syntax highlighting, and refactoring. Used by Xcode and other editors to provide Swift language services.
+
+#### 🔹Swift Runtime 
+- The supporting runtime library that includes features like dynamic dispatch, memory management (ARC), and metadata handling.
+
+#### 🔹LLDB with Swift support 
+- The debugger used for Swift programs.
+
+#### 🔹Swift Core Libraries 
+- Implementations of common library functionality that's not in the standard library, including Foundation, XCTest, and Dispatch.
+
+#### 🔹Swift Evolution 
+- Not a technical component but a crucial part of the Swift project - the community process for evolving the language.
+
+When we use Swift, these components work together seamlessly to compile, run, and debug your code. The swift command itself is the top-level driver that coordinates all these tools.
 
 
 
